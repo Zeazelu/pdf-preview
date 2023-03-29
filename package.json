@@ -18,6 +18,10 @@
     "@angular/platform-browser": "^15.2.0",
     "@angular/platform-browser-dynamic": "^15.2.0",
     "@angular/router": "^15.2.0",
+    "ng2-pdf-viewer": "^9.1.4",
+    "pdf-viewer": "^0.8.1",
+    "pdfjs-dist": "^3.4.120",
+    "primeng": "^15.2.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
