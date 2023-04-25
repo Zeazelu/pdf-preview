@@ -18,7 +18,8 @@
     ></pdf-viewer>
 </p-dialog>
 <h3>Podgląd pdf od razu na stronie</h3>
-<pdf-viewer
+<ng-container *ngIf="src.endsWith('.pdf')">
+  <pdf-viewer
       [src]="src"
       [rotation]="0"
       [original-size]="false"
@@ -33,3 +34,13 @@
       [show-borders]="false"
       style="width: 300px; height: 300px;"
     ></pdf-viewer>
+</ng-container>
+<ng-container *ngIf="src.endsWith('.jpg')">
+  <p-image src="https://primefaces.org/cdn/primeng/images/galleria/galleria1.jpg" alt="Image" width="250"></p-image>
+</ng-container>
+<ng-container *ngIf="src.endsWith('.txt')">
+  <iframe 
+      src="http://webref.pl/pliki/html/multimedia/przyklad.txt" 
+      frameborder="0">
+    </iframe>
+</ng-container>

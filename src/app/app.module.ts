@@ -6,6 +6,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DialogModule } from 'primeng/dialog';
 import { ButtonModule } from 'primeng/button';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { ImageModule } from 'primeng/image';
+import { EditorModule } from 'primeng/editor';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -22,7 +24,9 @@ import { AppComponent } from './app.component';
     BrowserAnimationsModule,
     DialogModule,
     ButtonModule,
-    PdfViewerModule
+    PdfViewerModule,
+    ImageModule,
+    EditorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
